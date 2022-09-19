@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import classes from "./Navbar.module.scss";
-import { useTheme } from "../../app/providers/ThemeProvider/lib/useTheme";
+import { useTheme } from "../../../app/providers/ThemeProvider/lib/useTheme";
 
 export const Navbar = () => {
   const { theme, toggleTheme } = useTheme();
