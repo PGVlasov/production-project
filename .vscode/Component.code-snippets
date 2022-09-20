@@ -1,0 +1,17 @@
+{
+  "component": {
+    //"scope": "typescript, javascript, tsx",
+    "prefix": "qwe",
+    "body": ["import { classNames } from ",
+   "import classes from",
+    
+    "interface AppLinkProps {"
+      "className?: string;"
+"    }"
+    
+    "export const AppLink = ({ className }: AppLinkProps) => {"
+     " return <div className={classNames(classes.AppLink, {}, [className])}></div>;"
+    "};"],
+    "description": "Log output to console"
+  }
+}
