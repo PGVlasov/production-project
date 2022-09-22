@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { classNames } from "shared/lib/classNames/classNames";
+import { LanSwitcher } from "widgets/lanSwitcher/ui/LanSwitcher";
 import { ThemeSwitcher } from "widgets/themeSwitcher";
 import classes from "./SideBar.module.scss";
 
@@ -23,6 +24,7 @@ export const SideBar = ({ className }: SideBarProps) => {
       <button onClick={onToggle}>toggle</button>
       <div className={classes.switchers}>
         <ThemeSwitcher />
+        <LanSwitcher className={classes.lang} />
       </div>
     </div>
   );
