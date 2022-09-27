@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { classNames } from "shared/lib/classNames/classNames";
-import { LanSwitcher } from "widgets/lanSwitcher/ui/LanSwitcher";
+import { LanSwitcher } from "widgets/lanSwitcher";
 import { ThemeSwitcher } from "widgets/themeSwitcher";
 import classes from "./SideBar.module.scss";
 
