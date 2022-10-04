@@ -19,7 +19,7 @@ export default (env: BuildEnv) => {
 
   const isDev = mode === "development";
   const config: webpack.Configuration = buildWebpackConfig({
-    mode, //: "production",
+    mode: "production",
     pathes,
     isDev,
     port: PORT,
