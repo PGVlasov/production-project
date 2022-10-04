@@ -1,8 +1,5 @@
 import path from "path";
 import webpack from "webpack"; //to access built-in plugins
-import { buildPlugins } from "./config/build/buildPlugins";
-import { buildLoaders } from "./config/build/buildLoaders";
-import { buildResolves } from "./config/build/buildResilves";
 import { buildWebpackConfig } from "./config/build/buildWebpackConfig";
 import { BuildEnv, BuildPathes } from "./config/build/types/config";
 
