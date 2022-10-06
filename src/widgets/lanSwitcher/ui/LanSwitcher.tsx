@@ -5,8 +5,9 @@ import { Button, ThemeButton } from "shared/ui/Button/Button";
 
 interface LanSwitcherProps {
   className?: string;
+  short?: boolean;
 }
-export const LanSwitcher = ({ className }: LanSwitcherProps) => {
+export const LanSwitcher = ({ className, short }: LanSwitcherProps) => {
   const { t } = useTranslation();
   const toggle = () => {
     i18n.changeLanguage(i18n.language === "ru" ? "en" : "ru");
@@ -18,7 +19,7 @@ export const LanSwitcher = ({ className }: LanSwitcherProps) => {
       theme={ThemeButton.CLEAR}
       onClick={toggle}
     >
-      {t("Язык")}
+      {t(short ? "Короткий язык" : "Язык")}
     </Button>
   );
 };
