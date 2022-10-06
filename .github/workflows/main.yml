@@ -21,10 +21,10 @@ jobs:
         run: npm install
       - name: unit testing
         run: npm run test:unit
-        #  if: alweys()
+         if: always()
       - name: build storybook
         run: npm run storybook:build
-        #  if: alweys()
+         if: always()
       - name: screenshot testing
         run: npm run test:ui:ci
-        # if: alweys()
+        if: always()
