@@ -27,6 +27,12 @@ Cleaar.args = {
   theme: ThemeButton.CLEAR,
 };
 
+export const CleaarInverded = Template.bind({});
+CleaarInverded.args = {
+  children: "Text",
+  theme: ThemeButton.CLEAR_INVERTED,
+};
+
 export const background = Template.bind({});
 background.args = {
   children: "Text",

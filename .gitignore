@@ -5,3 +5,6 @@
 /storybook-static
 .loki/report.json
 .loki/report.html
+.gitignore
+
+#loki, cinfig, linter + Portal linter lesson 29 20.00
