@@ -43,7 +43,9 @@
 .content {
   padding: 20px;
   border-radius: 12px;
-  background: var(--bg-color);
+  background-color: #090949;
+  //background: var(--bg-color);
+  color: #04ff04;
 
   transition: 0.3s transform;
   transform: scaleX(0.5);

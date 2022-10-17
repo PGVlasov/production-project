@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack serve --env port=3000 --open",
+    "start:dev:server": "node ./json-server/index.js",
     "build:dev": "npx webpack --env node=development",
     "build:prod": "webpack --env node=production",
     "lint:scss": "npx stylelint \"**/*.scss\"",
@@ -50,6 +51,7 @@
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.0",
     "jest": "^27.5.1",
+    "json-server": "^0.17.0",
     "loki": "^0.30.3",
     "regenerator-runtime": "^0.13.9",
     "req-cli": "^1.0.2",

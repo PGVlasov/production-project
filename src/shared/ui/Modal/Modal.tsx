@@ -60,12 +60,18 @@ export const Modal = (props: ModalProps) => {
   const mods: Record<string, boolean> = {
     [classes.opend]: isOpen,
     [classes.isClising]: isClosing,
-    [classes[theme]]: true,
+    [theme]: true,
   };
 
   return (
     <Portal>
-      <div className={classNames(classes.Modal, mods, [className])}>
+      <div
+        className={classNames(classes.Modal, mods, [
+          className,
+          theme,
+          "app__modal",
+        ])}
+      >
         <div className={classes.overlay} onClick={closeHandler}>
           <div className={classes.content} onClick={onContentClick}>
             {children}
